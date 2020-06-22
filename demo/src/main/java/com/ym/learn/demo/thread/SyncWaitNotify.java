@@ -48,7 +48,7 @@ public class SyncWaitNotify {
             synchronized (o) {
                 for (char c : aC) {
                     System.out.print(c);
-
+                    tsStarted = false;
                     try {
                         o.notify();
                         o.wait();

@@ -15,7 +15,7 @@ public class AlterOuput {
 
         t1 = new Thread(() -> {
             for (char c : aI){
-                System.out.println(c);
+                System.out.print(c);
                 LockSupport.unpark(t2);//叫醒t2
                 LockSupport.park();//阻塞t1
             }
@@ -25,7 +25,7 @@ public class AlterOuput {
 
             for (char c : aC){
                 LockSupport.park();
-                System.out.println(c);
+                System.out.print(c);
                 LockSupport.unpark(t1);
             }
         },"t2");
