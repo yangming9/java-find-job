@@ -19,7 +19,7 @@ public class BubbleSorting {
         System.out.println("\n");
     }
 
-    public static void bubble_sort(int array[]) {
+    private static void bubble_sort(int array[]) {
         int n = array.length;
         int k;
         for (int m = n; m > 0; m--) {
