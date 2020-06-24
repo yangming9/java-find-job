@@ -19,6 +19,20 @@ public class BubbleSorting {
         System.out.println("\n");
     }
 
+    private static void bubble_sort2(int arr[]){
+        int length = arr.length;
+        for (int i = 0;i<length-1;i++){
+            for (int j=0;j<length-i-1;j++){
+                if (arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+            printNumbers(arr);
+        }
+    }
+
     private static void bubble_sort(int array[]) {
         int n = array.length;
         int k;
@@ -34,9 +48,10 @@ public class BubbleSorting {
     }
 
     public static void main(String[] args) {
-        int[] input1 = {5, 1, 12, -5, 16};
+        int[] input1 = {5, 1, 12,5, 1, 12, -5, 16, -5, 16};
 //        int[] input2 = {4, 2, 9, 6, 23, 12, 34, 0, 1};
-        bubble_sort(input1);
+//        bubble_sort(input1);
 //        bubble_sort(input2);
+        bubble_sort2(input1);
     }
 }
