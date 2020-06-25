@@ -106,7 +106,7 @@ public class TreeNode3 {
         TreeNode b = new TreeNode(7, d, e);
         TreeNode c = new TreeNode(8, f, null);
         TreeNode root = new TreeNode(9, b, c);
-        for (Integer val : levelOrderTree(root)) {
+        for (Integer val : preorderTree(root)) {
             System.out.print(val + " ");
         }
     }
