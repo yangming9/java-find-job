@@ -8,7 +8,6 @@ import java.util.concurrent.locks.LockSupport;
  */
 public class AlterOuput {
     static Thread t1 = null,t2 = null;
-
     public static void main(String[] args) throws Exception{
         char[] aI = "1234567".toCharArray();
         char[] aC = "ABCDEFG".toCharArray();
