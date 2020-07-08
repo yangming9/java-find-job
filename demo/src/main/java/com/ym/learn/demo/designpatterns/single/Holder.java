@@ -1,4 +1,4 @@
-package com.ym.learn.demo.single;
+package com.ym.learn.demo.designpatterns.single;
 //静态内部类
 public class Holder {
     private Holder() {

@@ -1,4 +1,4 @@
-package com.ym.learn.demo.single;
+package com.ym.learn.demo.designpatterns.single;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

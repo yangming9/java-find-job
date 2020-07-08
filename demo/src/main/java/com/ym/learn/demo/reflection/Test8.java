@@ -56,5 +56,9 @@ public class Test8 {
         for (Constructor constructor:constructors){
             System.out.println(constructor);
         }
+
+        //获取指定构造器
+        Constructor<?> constructor = aClass.getDeclaredConstructor(String.class, int.class, int.class);
+        System.out.println(constructor);
     }
 }

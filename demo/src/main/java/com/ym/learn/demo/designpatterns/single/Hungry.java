@@ -1,4 +1,4 @@
-package com.ym.learn.demo.single;
+package com.ym.learn.demo.designpatterns.single;
 //饿汉式单例  可能会浪费空间，实例创建就申请了空间，但是可能并没有使用就会造成空间的浪费
 public class Hungry {
 
