@@ -1,6 +1,6 @@
-package com.ym.learn.demo.designpatterns.factory.simple;
+package com.ym.learn.demo.designpatterns.factory.method;
 
-public class Dazhong implements Car{
+public class Dazhong implements Car {
     @Override
     public void name() {
         System.out.println("大众");
