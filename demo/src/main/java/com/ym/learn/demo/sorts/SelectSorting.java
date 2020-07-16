@@ -1,4 +1,4 @@
-package com.ym.learn.demo.math;
+package com.ym.learn.demo.sorts;
 
 import java.util.Arrays;
 

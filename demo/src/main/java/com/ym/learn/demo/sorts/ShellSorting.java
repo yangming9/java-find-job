@@ -1,4 +1,4 @@
-package com.ym.learn.demo.math;
+package com.ym.learn.demo.sorts;
 
 /**
  * 希尔排序
