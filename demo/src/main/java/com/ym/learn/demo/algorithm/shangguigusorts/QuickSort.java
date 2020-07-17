@@ -1,7 +1,5 @@
 package com.ym.learn.demo.algorithm.shangguigusorts;
 
-import java.util.Arrays;
-
 /**
  * 快速排序
  * 是对冒泡排序的改进
@@ -12,15 +10,15 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr2 = {72, 6, 57, 88, 60, 45, 456, 5354, 42, 83, 73, 48, 85};
         int arr1[] = {2,2,2,2,2,2,2};
-        int arr[] = new int[8_000_0000];
-        for (int i = 0; i < 8_000_0000; i++) {
-            arr[i] = (int) (Math.random() * 8_000_0000);
+        int arr[] = new int[8_000_000];
+        for (int i = 0; i < 8_000_000; i++) {
+            arr[i] = (int) (Math.random() * 8_000_000);
         }
         long startTime = System.currentTimeMillis();
-        quick_sort(arr2, 0, arr2.length - 1);
+        quick_sort(arr, 0, arr.length - 1);
         long endTime = System.currentTimeMillis();
         System.out.println("排序时间为：" + (endTime - startTime));
-        System.out.println(Arrays.toString(arr2));
+//        System.out.println(Arrays.toString(arr2));
     }
 
     private static void quick_sort(int arr[], int left, int right) {
