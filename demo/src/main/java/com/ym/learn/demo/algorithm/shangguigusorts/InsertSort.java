@@ -11,9 +11,9 @@ public class InsertSort {
 
     public static void main(String[] args) {
         //创建一个8万个随机的数组
-        int arr_new[] = new int[800000];
-        for (int i = 0;i<800000;i++){
-            arr_new[i] = (int)(Math.random()*800000);
+        int arr_new[] = new int[80000];
+        for (int i = 0;i<80000;i++){
+            arr_new[i] = (int)(Math.random()*80000);
         }
         long startTime = System.currentTimeMillis();
         insert_sort(arr_new);
