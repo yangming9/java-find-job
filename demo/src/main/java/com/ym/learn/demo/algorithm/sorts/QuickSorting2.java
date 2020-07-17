@@ -1,4 +1,4 @@
-package com.ym.learn.demo.sorts;
+package com.ym.learn.demo.algorithm.sorts;
 
 /**
  * 快速排序第二种思路

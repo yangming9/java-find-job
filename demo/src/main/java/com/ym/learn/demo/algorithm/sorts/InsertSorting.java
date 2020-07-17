@@ -1,4 +1,4 @@
-package com.ym.learn.demo.sorts;
+package com.ym.learn.demo.algorithm.sorts;
 
 /**
  * 插入排序
