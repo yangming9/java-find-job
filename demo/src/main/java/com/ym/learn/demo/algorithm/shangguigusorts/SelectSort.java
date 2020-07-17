@@ -13,9 +13,9 @@ public class SelectSort {
 
     public static void main(String[] args) {
         int arr[] = {101, 34, 119, 1};
-        int arr_new[] = new int[80000];
-        for (int i = 0; i < 80000; i++) {
-            arr_new[i] = (int) (Math.random() * 80000);
+        int arr_new[] = new int[800000];
+        for (int i = 0; i < 800000; i++) {
+            arr_new[i] = (int) (Math.random() * 800000);
         }
         long startTime = System.currentTimeMillis();
         select_sort(arr_new);
