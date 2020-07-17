@@ -9,9 +9,9 @@ package com.ym.learn.demo.algorithm.shangguigusorts;
  */
 public class ShellSort {
     public static void main(String[] args) {
-        int arr[] = new int[80000];
-        for (int i = 0; i < 80000; i++) {
-            arr[i] = (int) (Math.random() * 80000);
+        int arr[] = new int[8000000];
+        for (int i = 0; i < 8000000; i++) {
+            arr[i] = (int) (Math.random() * 8000000);
         }
         long startTime = System.currentTimeMillis();
         shell_sort(arr);
@@ -33,6 +33,8 @@ public class ShellSort {
                         temp = arr[j];
                         arr[j] = arr[j + gap];
                         arr[j + gap] = temp;
+                    }else {//避免不必要的循环
+                        break;
                     }
                 }
             }
