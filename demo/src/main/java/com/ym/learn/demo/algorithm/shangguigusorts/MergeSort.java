@@ -1,7 +1,7 @@
 package com.ym.learn.demo.algorithm.shangguigusorts;
 
 /**
- * 归并排序
+ * 归并排序  O(nlogn) 线性对数阶
  * 采用分治策略  将大的问题分解为小的问题 然后递归求解
  */
 public class MergeSort {
