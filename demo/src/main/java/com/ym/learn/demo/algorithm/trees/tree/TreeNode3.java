@@ -1,4 +1,4 @@
-package com.ym.learn.demo.tree;
+package com.ym.learn.demo.algorithm.trees.tree;
 
 import java.util.*;
 
