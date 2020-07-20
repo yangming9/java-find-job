@@ -14,7 +14,6 @@ public class Test {
         String future = (String) futureTask.get();
         System.out.println(future);
     }
-
     static class MyThread implements Callable<String> {
 
         @Override

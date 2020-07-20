@@ -40,4 +40,14 @@ class DemoApplicationTests {
         stringRedisTemplate.opsForValue().set("user3",user.toString());
     }
 
+    @Test
+    public void test2(){
+        Short a = 127;
+        Short b = 127;
+        Short c = 32764;
+        System.out.println("a==b:"+(a==b));
+        System.out.println("b==c:"+(b==c));
+
+    }
+
 }
