@@ -9,7 +9,6 @@ package com.ym.learn.demo.designpatterns.shangguiguhanshunping.yuanze;
  */
 public class Segeration1 {
     public static void main(String[] args) {
-
     }
 }
 interface Inteface1{
