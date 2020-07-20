@@ -33,5 +33,5 @@ public class DemoApplication {
         return (Redisson) Redisson.create(config);
     }
 
-    
+
 }
