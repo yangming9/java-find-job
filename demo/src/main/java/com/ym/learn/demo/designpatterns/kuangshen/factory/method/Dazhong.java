@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.factory.method;
+package com.ym.learn.demo.designpatterns.kuangshen.factory.method;
 
 public class Dazhong implements Car {
     @Override

@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.abstractfactory;
+package com.ym.learn.demo.designpatterns.kuangshen.abstractfactory;
 
 public interface IphoneProduct {
     void start();
