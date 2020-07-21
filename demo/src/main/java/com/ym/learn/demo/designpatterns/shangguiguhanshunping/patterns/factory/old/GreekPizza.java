@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.factory.simplefactory;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.factory.old;
 
 public class GreekPizza extends Pizza {
 
