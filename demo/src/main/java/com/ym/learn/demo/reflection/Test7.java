@@ -20,7 +20,7 @@ public class Test7 {
         classLoader = Class.forName("java.lang.Override").getClassLoader();
         System.out.println(classLoader);
 
-        System.out.println(System.getProperty("java.class.path"));
+        System.out.println(System.getProperty("java.classadapter.path"));
 
 
     }

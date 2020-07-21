@@ -4,7 +4,7 @@
 //import redis.clients.jedis.Jedis;
 //import redis.clients.jedis.Transaction;
 //
-//public class TestPing {
+//public classadapter TestPing {
 //    public static void main(String[] args) {
 //        //1 new Jedis 对象即可
 //        Jedis jedis = new Jedis("127.0.0.1",6379);

@@ -5,7 +5,7 @@ public class Test3 {
         /**
          * 方式1. 通过对象获得
          * 方式2.通过forname
-         * 方式3.通过类名 .class
+         * 方式3.通过类名 .classadapter
          * 方式4.基本内置类型的包装类都有一个Type属性
          */
         Person person = new Student();
