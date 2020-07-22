@@ -1,4 +1,5 @@
 package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.decorator;
+
 //具体的调味品 具体的Decorator
 public class Chocolate extends Decorator {
     public Chocolate(Drink drink) {
@@ -6,6 +7,4 @@ public class Chocolate extends Decorator {
         setDes(" chocolate");
         setPrice(3.0f);
     }
-
-
 }
