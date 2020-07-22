@@ -2,4 +2,5 @@ package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.li
 
 public interface ITeacherDao {
     void teach();
+    void sayHello(String name);
 }

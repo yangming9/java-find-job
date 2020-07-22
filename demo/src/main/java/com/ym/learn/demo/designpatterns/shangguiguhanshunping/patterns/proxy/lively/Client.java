@@ -16,5 +16,7 @@ public class Client {
         ITeacherDao proxyInstance = (ITeacherDao) new ProxyFactory(teacherDao).getProxyInstance();
 
         proxyInstance.teach();
+
+        proxyInstance.sayHello("tom");
     }
 }
