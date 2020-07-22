@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.lively;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.dynamicproxy;
 
 public class TeacherDao implements ITeacherDao {
     @Override

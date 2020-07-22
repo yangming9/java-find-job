@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.quiet;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.staticproxy;
 
 public class TeacherDaoProxy implements ITeacherDao {
 

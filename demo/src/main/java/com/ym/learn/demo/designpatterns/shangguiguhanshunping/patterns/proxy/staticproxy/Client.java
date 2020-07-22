@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.quiet;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.staticproxy;
 
 /**
  * 应用实例

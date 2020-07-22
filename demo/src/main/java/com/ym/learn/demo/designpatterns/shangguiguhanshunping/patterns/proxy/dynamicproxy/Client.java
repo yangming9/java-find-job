@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.lively;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.dynamicproxy;
 
 /**
  * 代理对象不需要实现接口，但是目标对象要实现接口，否则不能用动态代理

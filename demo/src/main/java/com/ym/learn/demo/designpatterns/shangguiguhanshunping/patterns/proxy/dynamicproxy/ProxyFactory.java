@@ -1,4 +1,4 @@
-package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.lively;
+package com.ym.learn.demo.designpatterns.shangguiguhanshunping.patterns.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
