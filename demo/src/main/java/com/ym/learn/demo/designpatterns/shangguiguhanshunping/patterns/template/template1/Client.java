@@ -9,5 +9,6 @@ public class Client {
         System.out.println("=====制作黄豆豆浆=====");
         SoyaMilk peanutSoyaMilk = new PeanutSoyaMilk();
         peanutSoyaMilk.make();
+        
     }
 }
