@@ -1,5 +1,7 @@
 package com.ym.learn.demo.algorithm.linkedlist;
 
+import java.util.Stack;
+
 public class SingleLinkedListDemo {
     public static void main(String[] args) {
         HeroNode heroNode = new HeroNode(1, "test1", "q");
@@ -21,19 +23,49 @@ public class SingleLinkedListDemo {
         singleLinkedList.delNode(5);
         singleLinkedList.list();
         System.out.println("链表的节点个数为：" + getLinkedListLength(singleLinkedList.getHead()));
-        System.out.println(getHeroNodeByIndex(singleLinkedList.getHead(),2).toString());
+        System.out.println(getHeroNodeByIndex(singleLinkedList.getHead(), 2).toString());
         System.out.println("-----链表反转-----");
         reverseLinkedList(singleLinkedList);
         singleLinkedList.list();
+        System.out.println("利用栈反序打印所有的链表");
+        reversePrintByStack(singleLinkedList);
+    }
+
+
+    /**
+     * 反序打印
+     *
+     * @param singleLinkedList
+     */
+    public static void reversePrintByStack(SingleLinkedList singleLinkedList) {
+        HeroNode head = singleLinkedList.getHead();
+        if (head.next == null){
+            return;
+        }
+        Stack<HeroNode> nodeStack = new Stack<>();
+
+        HeroNode cur = head.next;
+
+        //将链表所有节点 压入栈中
+        while (cur != null){
+            nodeStack.push(cur);
+            cur = cur.next;
+        }
+
+        while (!nodeStack.isEmpty()){
+            HeroNode temp = nodeStack.peek();
+            System.out.println(temp);
+            nodeStack.pop();
+        }
     }
 
     /**
      * 反转单链表
      */
-    public static void reverseLinkedList(SingleLinkedList singleLinkedList){
+    public static void reverseLinkedList(SingleLinkedList singleLinkedList) {
         HeroNode head = singleLinkedList.getHead();
         //链表为空或只有一个节点无需反转
-        if (head.next == null || head.next.next == null){
+        if (head.next == null || head.next.next == null) {
             return;
         }
 
@@ -41,9 +73,9 @@ public class SingleLinkedListDemo {
         HeroNode cur = head.next;
         HeroNode next = null;//指向当前节点的下一个节点
 
-        HeroNode reverseHead = new HeroNode(0,"","");
+        HeroNode reverseHead = new HeroNode(0, "", "");
 
-        while (cur !=null){
+        while (cur != null) {
             next = cur.next;//暂时保存当前节点的下一个节点
             cur.next = reverseHead.next;
             reverseHead.next = cur;
@@ -72,13 +104,13 @@ public class SingleLinkedListDemo {
 
         int length = getLinkedListLength(head);
 
-        if (index > length){
+        if (index > length) {
             return null;
         }
 
         HeroNode cur = head.next;
         int i = 0;
-        while (i<length-index){
+        while (i < length - index) {
             cur = cur.next;
             i++;
         }
