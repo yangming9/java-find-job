@@ -6,11 +6,11 @@ public class SingleLinkedListDemo {
         HeroNode heroNode1 = new HeroNode(2, "test2", "w");
         HeroNode heroNode2 = new HeroNode(3, "test3", "e");
         SingleLinkedList singleLinkedList = new SingleLinkedList();
-//        singleLinkedList.add(heroNode);
-//        singleLinkedList.add(heroNode1);
-//        singleLinkedList.add(heroNode2);
+        singleLinkedList.add(heroNode);
+        singleLinkedList.add(heroNode1);
+        singleLinkedList.add(heroNode2);
         singleLinkedList.list();
-//        singleLinkedList.addByOrder(new HeroNode(4, "test4", "r"));
+        singleLinkedList.addByOrder(new HeroNode(4, "test4", "r"));
         System.out.println("------按照顺序插入后------");
         singleLinkedList.list();
         System.out.println("------修改链表指定位置的内容-------");
@@ -20,14 +20,34 @@ public class SingleLinkedListDemo {
         System.out.println("-------删除指定节点-------");
         singleLinkedList.delNode(5);
         singleLinkedList.list();
+        System.out.println("链表的节点个数为："+getLinkedListLength(singleLinkedList.getHead()));
 
     }
+
+    //获取链表的个数  如果带头结点 的链表 需要将头结点去掉 不进行统计
+    public static int getLinkedListLength(HeroNode node){
+        if (node.next == null){
+            return 0;
+        }
+        int length = 0;
+        HeroNode temp = node.next;
+        while (temp != null){
+            length++;
+            temp = temp.next;
+        }
+        return length;
+    }
 }
+
 
 //定义一个SingleLinkedList管理我们的英雄
 class SingleLinkedList {
     //初始化一个头结点   头结点一般不要动
     private HeroNode head = new HeroNode(0, "", "");
+
+    public HeroNode getHead(){
+        return head;
+    }
 
     //添加节点到单向链表
     //不考虑编号顺序
