@@ -1,9 +1,12 @@
 package com.ym.learn.demo.cas;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class CASDemo {
+
+    public static AtomicInteger ON_LINE_SERVICE = new AtomicInteger(1);
 
     public static void main(String[] args) {
 //        AtomicInteger atomicInteger = new AtomicInteger(2020);

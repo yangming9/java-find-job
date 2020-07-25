@@ -23,7 +23,7 @@ public class AlterOuput {
         t2 = new Thread(() -> {
 
             for (char c : aC){
-                LockSupport.park();
+                LockSupport.park(t2);
                 System.out.print(c);
                 LockSupport.unpark(t1);
             }
