@@ -24,7 +24,7 @@ public class Lock2 {
     public static void main(String[] args) {
         Lock2 lock2 = new Lock2();
         lock2.lock();
-        lock2.unlock();
+//        lock2.unlock();
         lock2.lock();
     }
 }
