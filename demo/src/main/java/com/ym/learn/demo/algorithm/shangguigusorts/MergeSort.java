@@ -75,9 +75,7 @@ public class MergeSort {
         t=0;
         int tempLeft = left;
         while (tempLeft<= right){
-            arr[tempLeft] = temp[t];
-            tempLeft++;
-            t++;
+            arr[tempLeft++] = temp[t++];
         }
     }
 

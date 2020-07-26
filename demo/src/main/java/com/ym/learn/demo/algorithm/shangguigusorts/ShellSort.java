@@ -9,12 +9,13 @@ package com.ym.learn.demo.algorithm.shangguigusorts;
  */
 public class ShellSort {
     public static void main(String[] args) {
+        int arr1[] = {5, 1, 12,5, 1, 12, -5, 16, -5, 16};
         int arr[] = new int[8000000];
         for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random() * 8000000);
         }
         long startTime = System.currentTimeMillis();
-        shell_sort(arr);
+        shell_sort(arr1);
         long endTime = System.currentTimeMillis();
         System.out.println("排序时间为：" + (endTime - startTime));
     }
