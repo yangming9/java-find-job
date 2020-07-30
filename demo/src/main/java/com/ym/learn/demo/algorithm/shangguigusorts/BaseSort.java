@@ -13,6 +13,15 @@ public class BaseSort {
         int arr[] = {53, 3, 542, 748, 14, 214};
         base_sort(arr);
         System.out.println("" + Arrays.toString(arr));
+        int n = 2;
+        String start = "1";
+        start.length();
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0;i<1;i++){
+            int temp = 0;
+            sb.append(n);
+        }
+        System.out.println(sb.toString());
     }
 
     /**
