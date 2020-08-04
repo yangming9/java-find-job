@@ -15,6 +15,7 @@ public class Client {
         HashMap<String, Integer> var = getValue(expStr);
         Calculator calculator = new Calculator(expStr);
         System.out.println("运算结果：" + expStr + "=" + calculator.run(var));
+
     }
 
     private static String getxpStr() throws IOException {
