@@ -6,9 +6,9 @@ package com.ym.learn.demo.algorithm.shangguigusorts;
  */
 public class MergeSort {
     public static void main(String[] args) {
-        int arr[] = new int[8_000_000];
-        for (int i = 0; i < 8_000_000; i++) {
-            arr[i] = (int) (Math.random() * 8_000_000);
+        int arr[] = new int[8000000];
+        for (int i = 0; i < 8000000; i++) {
+            arr[i] = (int) (Math.random() * 8000000);
         }
         int temp[] = new int[arr.length];
         long startTime = System.currentTimeMillis();
