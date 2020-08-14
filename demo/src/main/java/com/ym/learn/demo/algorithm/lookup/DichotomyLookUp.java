@@ -54,9 +54,6 @@ public class DichotomyLookUp {
      * @return
      */
     private static ArrayList<Integer> dichotomy_lookup_optimization(int arr[], int left, int right, int findVal){
-
-
-
         if (left>right){
             return new ArrayList<Integer>();
         }
