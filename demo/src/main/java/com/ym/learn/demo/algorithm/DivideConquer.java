@@ -1,4 +1,4 @@
-package com.ym.learn.demo.algorithm.find;
+package com.ym.learn.demo.algorithm;
 
 /**
  * 分治算法
