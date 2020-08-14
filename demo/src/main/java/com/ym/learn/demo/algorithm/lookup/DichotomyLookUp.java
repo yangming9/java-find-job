@@ -70,8 +70,7 @@ public class DichotomyLookUp {
                 if (temp<0 || arr[temp] != findVal){
                     break;
                 }
-                arrayList.add(temp);
-                temp -=1;
+                arrayList.add(temp--);
             }
             arrayList.add(mid);
             temp = mid+1;
@@ -79,8 +78,7 @@ public class DichotomyLookUp {
                 if (temp>arr.length-1 || arr[temp] != findVal){
                     break;
                 }
-                arrayList.add(temp);
-                temp +=1;
+                arrayList.add(temp++);
             }
 
             return arrayList;
