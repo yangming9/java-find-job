@@ -1,7 +1,7 @@
 package com.ym.learn.demo.algorithm.find;
 
 /**
- * 插值查找算法
+ * 插值查找算法  时间复杂度 O(logN)
  * mid下标的计算公式：
  * int mid = left + (right-left)*(findVal - arr[left])/(arr[right]-arr[left])
  * 适用场景：

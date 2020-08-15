@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 二分查找必须在有序数组中使用
+ * 二分查找必须在有序数组中使用  时间复杂度为O(log2N)以2为底 N的对数
  * 如果是无需数组必须先转换为有序数组
  * 思路：
  * 1.首先确定该数组的中间下标  mid=(left+right)/2
