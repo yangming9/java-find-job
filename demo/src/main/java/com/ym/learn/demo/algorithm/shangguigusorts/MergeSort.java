@@ -1,19 +1,23 @@
 package com.ym.learn.demo.algorithm.shangguigusorts;
 
+import java.util.Arrays;
+
 /**
  * 归并排序  O(nlogn) 线性对数阶
  * 采用分治策略  将大的问题分解为小的问题 然后递归求解
  */
 public class MergeSort {
     public static void main(String[] args) {
+        int arr2[] = {5, 1, 12, 5, 1, 12, -5, 16, -5, 16};
         int arr[] = new int[8000000];
         for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random() * 8000000);
         }
-        int temp[] = new int[arr.length];
+        int temp[] = new int[arr2.length];
         long startTime = System.currentTimeMillis();
-        merge_sort(arr,0,arr.length-1,temp);
+        merge_sort(arr2,0,arr2.length-1,temp);
         long endTime = System.currentTimeMillis();
+        System.out.println(Arrays.toString(arr2));
         System.out.println("排序时间为：" + (endTime - startTime));
     }
 
@@ -50,25 +54,17 @@ public class MergeSort {
              * 2.如果右边的元素大于左边的元素，则右边的拷贝到temp数组
              */
             if (arr[i]<=arr[j]){
-                temp[t] = arr[i];
-                t++;
-                i++;
+                temp[t++] = arr[i++];
             }else {
-                temp[t] = arr[j];
-                t++;
-                j++;
+                temp[t++] = arr[j++];
             }
         }
         //2.将有剩余数据的一方填充到temp数组中
         while (i<=mid){
-            temp[t] = arr[i];
-            t++;
-            i++;
+            temp[t++] = arr[i++];
         }
         while (j<=right){
-            temp[t] = arr[j];
-            j++;
-            t++;
+            temp[t++] = arr[j++];
         }
         //3.将temp数组的元素拷贝到arr
         //注意并不是每次都拷贝所有 这里是递归调用

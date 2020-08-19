@@ -36,7 +36,6 @@ public class Test {
     }
     // 标记，默认树是平衡的（比如空树）
     static boolean flag = true;
-
     public static TreeNode sortedArrayToBST(int[] nums) {
         return dfs(nums, 0, nums.length-1);
     }
