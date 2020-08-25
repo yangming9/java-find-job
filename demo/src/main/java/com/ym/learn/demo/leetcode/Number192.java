@@ -41,20 +41,20 @@ public class Number192 {
     public static int compress2(char[] chars) {
         if (chars.length == 0)
             return 0;
-        int count = 0;
-        int start = 0;//窗口的起始下标 i来表示窗口的终点坐标
-        for (int i = 0;i<=chars.length;i++){
-            if (i == chars.length || chars[start] != chars[i]){
-                chars[count++] = chars[start];
-                int num = i - start;
-                if (num > 1 ) {
-                    for (char c : String.valueOf(num).toCharArray()) {
-                        chars[count++] = c;
+        //实现一  使用滑动窗口的思想
+        int start = 0;
+        int size = 0;
+        for(int i=0;i<=chars.length;i++){
+            if(i == chars.length || chars[start] != chars[i]){
+                chars[size++] = chars[start];
+                if(i - start > 1){
+                    for(char c : String.valueOf(i-start).toCharArray()){
+                        chars[size++] = c;
                     }
                 }
-                start = i;
             }
+            start = i;
         }
-        return count;
+        return size;
     }
 }
