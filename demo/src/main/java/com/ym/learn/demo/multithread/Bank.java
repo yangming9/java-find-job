@@ -1,0 +1,24 @@
+package com.ym.learn.demo.multithread;
+
+/**
+ * synchronized方法，在方法的声明前加入synchronized关键字  例如本类
+ */
+public class Bank {
+    private int account = 0;
+
+    public int getAccount() {
+        return account;
+    }
+
+    //同步方法写法1
+//    public synchronized void save(int money) {
+//        this.account += money;
+//    }
+    //同步方法由于加锁范围过大，效率会严重影响，此时其实使用同步代码块即可
+    //修改为一下的方式即可
+    public void save(int money) {
+        synchronized(this) {
+            this.account += money;
+        }
+    }
+}
