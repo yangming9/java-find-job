@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
  * 这个我们创建了一个线程池，如果线程池执行的时候如果核心线程处理不过来的时候会把数据放到
  * LinkedBlockingQueue里边，也就是堆内存中。这个时候我们需要检查 -Xms -Xmx 最小最大堆配置是否合理
  * 再一个dump出现当前内存来分析一下是否使用了大量的循环或使用大量内存代码
+ * 简单来讲就是任务队列的堆积 导致的 GC失败 无法进行回收
  */
 public class GCOverheadOOM {
     public static void main(String[] args) {
