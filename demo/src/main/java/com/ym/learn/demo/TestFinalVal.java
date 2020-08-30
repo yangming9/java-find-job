@@ -16,4 +16,26 @@ public class TestFinalVal {
         this.val = val;
     }
 
+    /**
+     * 关于函数的重载
+     * 返回类型可以相同也可以不同  但是参数列表必须进行修改，否则不构成函数的重载
+     * 参数列表可以是  参数顺序不同  参数类型不同  参数个数不同
+     * @return
+     */
+    public int test(){
+        return 0;
+    }
+
+    public int test(Integer a,String s){
+        return 0;
+    }
+
+    public int test(String s,Integer a){
+        return  0;
+    }
+
+    public int test(String a,String s){
+        return 0;
+    }
+
 }
