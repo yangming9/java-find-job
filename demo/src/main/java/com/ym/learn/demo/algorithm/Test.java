@@ -19,5 +19,9 @@ public class Test {
         start.retainAll(end);
         System.out.println("start: "+start);
         System.out.println("end: "+end);
+
+        String str = "ssss";
+        str += str;
+        System.out.println(str);
     }
 }
