@@ -38,4 +38,14 @@ public class TestFinalVal {
         return 0;
     }
 
+    public static double recursive(int i){
+        int sum = 0;
+
+        return sum + recursive(i);
+    }
+
+    public static void main(String[] args) {
+
+    }
+
 }

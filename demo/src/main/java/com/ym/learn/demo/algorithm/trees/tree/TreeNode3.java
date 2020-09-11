@@ -95,6 +95,8 @@ public class TreeNode3 {
 
 
     public static void main(String[] args) {
+        Queue<Object> queue = new LinkedList<>();
+
         TreeNode e = new TreeNode(1);
         TreeNode m = new TreeNode(10);
         TreeNode n = new TreeNode(11);

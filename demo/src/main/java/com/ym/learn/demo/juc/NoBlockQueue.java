@@ -1,16 +1,17 @@
 package com.ym.learn.demo.juc;
 
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class NoBlockQueue {
     private static ConcurrentLinkedQueue<Integer> concurrentLinkedQueue = new ConcurrentLinkedQueue<Integer>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
-        executorService.submit(new Producer("producer1"));
+        Future<?> future = executorService.submit(new Producer("producer1"));
+        System.out.println("*****");
+        future.get();
+        System.out.println("*****");
         executorService.submit(new Producer("producer2"));
         executorService.submit(new Producer("producer3"));
         executorService.submit(new Consumer("consumer1"));
