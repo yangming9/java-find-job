@@ -1,4 +1,4 @@
-package com.ym.learn.demo.leetcode;
+package com.ym.learn.demo.leetcode.old;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package com.ym.learn.demo.leetcode;
+package com.ym.learn.demo.leetcode.old;
 
 /**
  * 压缩字符串
